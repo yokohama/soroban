@@ -24,7 +24,5 @@ config/database.yml
 vendor/bundle
 .DS_Store
 
-Gemfile.lock
-
 # yokohama vim
 *.swp
