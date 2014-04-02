@@ -1,7 +1,9 @@
 source "http://rubygems.org"
 gem "rails"
 
-gem 'sqlite3'
+group:development do
+  gem 'sqlite3'
+end
 
 gem "therubyracer"
 gem "less-rails"
