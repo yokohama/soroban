@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/rawhide/code_holder
+  revision: 6e2e81b2b37160f244cd3bc57299d78ea3782288
+  specs:
+    code_holder (0.0.4)
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 663760e67b80ee25adc293bf5f03debae28b5af9
   specs:
@@ -122,6 +128,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  code_holder!
   coffee-rails
   jquery-rails
   less-rails

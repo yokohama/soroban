@@ -1,9 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @company.name %>
-</p>
+<h2><%= @company.name %></h2>
+
+<table class="table table-striped">
+  <tr>
+    <td>住所</td>
+    <td>
+      <p>〒<%= @company.zip_code1 %>-<%= @company.zip_code2 %></p>
+      <p><%= @company.prefecture_code %> <%= @company.address1 %><%= @company.address2 %></p>
+    </td>
+  </tr>
+  <tr>
+    <td>電話番号</td>
+    <td><%= @company.tel %></td>
+  </tr>
+</table>
 
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %>

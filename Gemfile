@@ -1,6 +1,8 @@
 source "http://rubygems.org"
 gem "rails"
 
+gem 'code_holder', :git => 'git://github.com/rawhide/code_holder'
+
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'

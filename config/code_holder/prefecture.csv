@@ -1,0 +1,5 @@
+title,都道府県
+#DATA
+key,value,position,name,short_name
+HOKKAIDO,hokkaido,1,北海道,北海道
+AOMORI,aomori,2,青森県,青森
