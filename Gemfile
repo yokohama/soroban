@@ -4,7 +4,7 @@ gem "rails"
 gem 'code_holder', :git => 'git://github.com/rawhide/code_holder'
 
 group :assets do
-  gem 'sass-rails'
+  gem 'sass-rails', '~> 4.0.2'
   gem 'coffee-rails'
   gem 'uglifier'
 end
@@ -15,10 +15,11 @@ end
 
 gem 'therubyracer'
 gem "less-rails"
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'bootstrap-sass'
 gem "jquery-rails"
 gem 'turbolinks'
 
 group:production do
   gem 'pg'
 end
+
