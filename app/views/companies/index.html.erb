@@ -17,7 +17,8 @@
         <td>〒<%= company.zip_code1 %>-<%= company.zip_code2 %> <%= company.prefecture_code %> <%= company.address1 %><%= company.address2 %></td>
         <td><%= company.tel %></td>
         <td>
-          <%= link_to '<span class="glyphicon glyphicon-search"></span>'.html_safe, company %>
+          <%= link_to '<span class="glyphicon glyphicon-search"></span>'.html_safe, company, rel: :popover,
+            data: { toggle: "tooltip", placement: "left", title: "Tooltip on left" } %>
           <%= link_to '<span class="glyphicon glyphicon-pencil"></span>'.html_safe, edit_company_path(company) %>
           <%= link_to '<span class="glyphicon glyphicon-trash"></span>'.html_safe, company, method: :delete, data: { confirm: 'Are you sure?'} %>
         </td>
